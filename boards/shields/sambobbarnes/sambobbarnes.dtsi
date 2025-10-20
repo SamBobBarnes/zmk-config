@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-
+#include "../spi_pins.h"
 
 / {
     chosen {
@@ -37,11 +37,11 @@ kscan0: kscan {
     wakeup-source;
 
     row-gpios
-        = <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        = <&shifter_row 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&shifter_row 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&shifter_row 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&shifter_row 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&shifter_row 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 
     };
