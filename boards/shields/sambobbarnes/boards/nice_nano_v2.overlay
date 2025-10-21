@@ -31,7 +31,6 @@
     cs-gpios =
         <&gpio1 SPI_CS_TB GPIO_ACTIVE_LOW>,  //P1.04
         <&gpio1 SPI_CS_COL GPIO_ACTIVE_LOW>, //P1.00
-        <&gpio0 SPI_CS_ROW GPIO_ACTIVE_LOW>; //P0.11
 
 //    trackball: trackball@0 {
 //        status = "okay";
@@ -59,16 +58,6 @@
 //    };
 
     shifter_col: 595@1 {
-            compatible = "zmk,gpio-595";
-            status = "okay";
-            gpio-controller;
-            spi-max-frequency = <200000>;
-            reg = <0>;
-            #gpio-cells = <2>;
-            ngpios = <8>;
-        };
-
-    shifter_row: 595@2 {
             compatible = "zmk,gpio-595";
             status = "okay";
             gpio-controller;
