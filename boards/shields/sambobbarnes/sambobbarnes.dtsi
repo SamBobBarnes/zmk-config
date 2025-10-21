@@ -37,11 +37,11 @@ kscan0: kscan {
     wakeup-source;
 
     row-gpios
-        = <&shifter_row 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-        , <&shifter_row 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        = <&shifter_row 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&shifter_row 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&shifter_row 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         , <&shifter_row 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+        , <&shifter_row 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 
     };
