@@ -28,9 +28,10 @@
     pinctrl-0 = <&spi0_default>;
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
-    cs-gpios =
-        <&gpio1 SPI_CS_TB GPIO_ACTIVE_LOW>,  //P1.04
-        <&gpio1 SPI_CS_COL GPIO_ACTIVE_LOW>, //P1.00
+    cs-gpios
+      = <&gpio1 SPI_CS_TB GPIO_ACTIVE_LOW>  //P1.04
+      , <&gpio1 SPI_CS_COL GPIO_ACTIVE_LOW>  //P1.00
+      ;
 
 //    trackball: trackball@0 {
 //        status = "okay";
