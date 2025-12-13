@@ -70,10 +70,10 @@
             //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                                &kp Z       &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &kp M          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0      &none
-                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &kp Y       &kp U       &none       &none       &none       &none       &to 4
-                 &kp CAPS     &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J       &none       &none       &none       &none       &to 2
-                             &kp LSHFT     &kp Z       &kp X      &kp C       &none    &kp LC(LALT)                               &none       &none       &none       &none       &none       &none
-                             &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B        &kp LALT       &none       &none       &none       &none       &none       &none
+                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 4
+                 &kp CAPS     &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J       &kp K       &kp L      &kp SEMI   &kp APOS      &to 2
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &none    &kp LC(LALT)                               &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
+                             &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B         &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
             >;
             display-name = "War Thunder";
         };
@@ -90,7 +90,7 @@
                    &mo 7      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 3
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
-                            &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET   &lt 5 SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
+                            &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET      &mo 8   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
             >;
             display-name = "Gaming";
         };
@@ -144,6 +144,23 @@
                              &bt BT_NXT    &trans      &trans    &kp LALT  &kp K_CMENU &kp LA(LSHFT) &bt BT_CLR_ALL   &trans      &trans     &kp K_APP    &trans      &trans      &trans      &trans
             >;
             display-name = "F-Row";
+        };
+
+        war_thunder_8 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |-----------
+            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |           |    LU     |
+            // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
+            //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
+            //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
+            bindings = <
+                               &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &trans
+                  &trans       &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                  &trans       &trans      &trans      &trans     &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans      &trans      &trans     &trans      &trans      &trans                                  &trans      &trans      &trans      &trans      &trans      &trans
+                               &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &trans
+            >;
+            display-name = "WT Alt";
         };
 
         trans_template {
