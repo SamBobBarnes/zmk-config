@@ -18,9 +18,9 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nrf52840dk_nrf52840
     shield: sambobbarnes_left
-  - board: nice_nano_v2
+  - board: nrf52840dk_nrf52840
     shield: sambobbarnes_right
-  - board: nrf52840_mdk
+  - board: nrf52840dk_nrf52840
     shield: settings_reset
