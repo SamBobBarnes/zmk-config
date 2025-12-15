@@ -22,5 +22,5 @@ include:
     shield: sambobbarnes_left
   - board: nice_nano_v2
     shield: sambobbarnes_right
-  - board: nice_nano_v2
+  - board: nrf52840_mdk
     shield: settings_reset
