@@ -37,14 +37,14 @@
             bindings = <
                                &none       &none       &none      &none       &none       &none       &none          &none      &kp PG_UP     &none  &kp KP_SLASH &kp KP_ASTERISK &kp KP_MINUS &none
                    &mo 1     &kp TAB       &none       &none      &kp UP      &none       &none       &none          &none      &kp PG_DN   &kp KP_N7   &kp KP_N8    &kp KP_N9  &kp KP_PLUS   &none       &to 2
-                   &none     &kp ESC     &kp HOME     &kp LEFT   &kp DOWN    &kp RIGHT   &kp END                                 &kp HOME    &kp KP_N4   &kp KP_N5    &kp KP_N6    &kp RET     &none       &to 0
+                   &none     &kp ESC     &kp HOME     &kp LEFT   &kp DOWN    &kp RIGHT   &kp END                                 &kp HOME    &kp KP_N4   &kp KP_N5    &kp KP_N6    &kp RET    &none       &to 0
                              &kp LSHFT     &none       &none      &none       &none       &none                                  &kp END    &kp KP_N1   &kp KP_N2    &kp KP_N3    &kp RET     &none
                              &kp LWIN      &none       &none     &kp LALT   &kp LCTRL     &kp BSPC    &kp DEL        &kp LALT    &kp RET   &lt 5 KP_N0  &kp KP_N0    &kp KP_DOT    &none      &none
             >;
             display-name = "Keypad";
         };
 
-        onshape_layer_2 {
+        warthunder_sim_layer_2 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|           |           |           |           |           |           |           ||||           |           |           |     /     |     *     |     -     |           |-----------
             // |    LU     |    tab    |   Constr  |  Project  |  Extrude  |  Revolve  |   Trim    |___________||||___________|           |     7     |     8     |     9     |     +     |           |    LU     |
@@ -52,13 +52,13 @@
             //             |   shift   |           |           |  Circle   |           |           |-----------||||-----------|           |     1     |     2     |     3     |    ENT    |           |
             //             |____win____|___________|___________|____alt____|____ctl____|____bsp____|____del____||||____alt____|____ent____|___ 0/SL___|_____0_____|_____._____|___________|___________|
             bindings = <
-                               &none       &none       &none      &none       &none       &none       &none          &none        &none       &none       &trans      &trans      &trans      &none
-                  &none        &trans      &kp Q       &kp U     &kp LS(E)   &kp LS(W)    &kp M       &none          &none        &none       &trans      &trans      &trans      &trans      &none       &to 3
-                  &none        &trans      &kp A       &kp L      &kp D      &kp LS(F)    &kp G                                   &none       &trans      &trans      &trans      &trans      &none       &to 1
-                               &trans      &none       &none      &kp C       &none       &none                                   &none       &trans      &trans      &trans      &trans      &none
-                               &trans      &none       &none      &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &none       &none
+                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &none       &none       &none       &none       &none       &none
+                   &mo 7     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &none        &none       &none       &none       &none       &none       &none       &to 3
+                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none       &to 1
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
+                            &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &mt LCTRL BSLH &kp BSPC &kp DEL   &none        &none      &kp TAB  &none    &none  &none  &none
             >;
-            display-name = "OnShape";
+            display-name = "WT Sim";
         };
 
         warthunder_layer_3 {
