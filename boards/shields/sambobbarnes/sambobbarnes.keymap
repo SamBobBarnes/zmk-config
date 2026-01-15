@@ -44,24 +44,7 @@
             display-name = "Keypad";
         };
 
-        warthunder_sim_layer_2 {
-            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
-            //  -----------|           |           |           |           |           |           |           ||||           |           |           |     /     |     *     |     -     |           |-----------
-            // |    LU     |    tab    |   Constr  |  Project  |  Extrude  |  Revolve  |   Trim    |___________||||___________|           |     7     |     8     |     9     |     +     |           |    LU     |
-            // |____LD_____|    esc    |    Arc    |   Line    | Dimension |  Fillet   |   Rect    |           ||||           |           |     4     |     5     |     6     |    ENT    |           |____LD_____|
-            //             |   shift   |           |           |  Circle   |           |           |-----------||||-----------|           |     1     |     2     |     3     |    ENT    |           |
-            //             |____win____|___________|___________|____alt____|____ctl____|____bsp____|____del____||||____alt____|____ent____|___ 0/SL___|_____0_____|_____._____|___________|___________|
-            bindings = <
-                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &none       &none       &none       &none       &none       &none
-                   &mo 7     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &none        &none       &none       &none       &none       &none       &none       &to 3
-                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none       &to 1
-                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
-                            &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &mt LCTRL BSLH &kp BSPC &kp DEL   &none        &none      &kp TAB  &none    &none  &none  &none
-            >;
-            display-name = "WT Sim";
-        };
-
-        warthunder_layer_3 {
+        warthunder_layer_2 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
             //  -----------|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |-----------
             // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |           |    LU     |
@@ -70,12 +53,29 @@
             //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                                &kp Z       &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &kp M          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0      &none
-                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 4
-                 &kp CAPS     &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J       &kp K       &kp L      &kp SEMI   &kp APOS      &to 2
+                  &none       &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T       &kp V          &none        &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 3
+                 &kp CAPS     &kp ESC      &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J       &kp K       &kp L      &kp SEMI   &kp APOS      &to 1
                              &kp LSHFT     &kp Z       &kp X      &kp C      &kp F12    &kp LC(LALT)                              &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                              &kp LCTRL     &none       &none     &kp LALT     &kp C     &kp SPACE     &kp B         &kp RALT     &kp RET      &mo 8     &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
             >;
             display-name = "War Thunder";
+        };
+
+        warthunder_sim_layer_3 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|           |           |           |           |           |           |           ||||           |           |           |     /     |     *     |     -     |           |-----------
+            // |    LU     |    tab    |   Constr  |  Project  |  Extrude  |  Revolve  |   Trim    |___________||||___________|           |     7     |     8     |     9     |     +     |           |    LU     |
+            // |____LD_____|    esc    |    Arc    |   Line    | Dimension |  Fillet   |   Rect    |           ||||           |           |     4     |     5     |     6     |    ENT    |           |____LD_____|
+            //             |   shift   |           |           |  Circle   |           |           |-----------||||-----------|           |     1     |     2     |     3     |    ENT    |           |
+            //             |____win____|___________|___________|____alt____|____ctl____|____bsp____|____del____||||____alt____|____ent____|___ 0/SL___|_____0_____|_____._____|___________|___________|
+            bindings = <
+                             &trans        &trans      &trans     &trans      &trans      &trans      &trans         &none        &none       &none       &none       &none       &none       &none
+                   &mo 8     &trans        &trans      &trans     &trans      &trans      &trans      &trans         &none        &none       &none       &none       &none       &none       &none       &to 4
+                 &kp CAPS    &trans        &trans      &trans     &trans      &trans      &trans                                  &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &none       &to 2
+                             &trans        &trans      &trans     &trans      &trans      &trans                                  &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &none
+                             &trans        &trans      &trans     &trans      &trans      &trans      &trans         &none        &none      &kp TAB  &none    &none  &none  &none
+            >;
+            display-name = "WT Sim";
         };
 
         gaming_layer_4 {
@@ -87,7 +87,7 @@
             //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
             bindings = <
                              &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &mo 7      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                   &mo 8      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 3
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                             &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET     &kp SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
