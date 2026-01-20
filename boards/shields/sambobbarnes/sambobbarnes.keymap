@@ -18,7 +18,7 @@
             //             |   shift   |     z     |     x     |     c     |     v     |     b     |-----------||||-----------|     n     |     m     |     ,     |     .     |     /     |   shift   |
             //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
             bindings = <
-                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
+                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &to 9          &to 9        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
                    &mo 7     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 1
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &none
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
@@ -162,6 +162,38 @@
             >;
             display-name = "WT Alt";
         };
+
+        one_hand_9 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |-----------
+            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |           |    LU     |
+            // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
+            //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
+            //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
+            bindings = <
+                             &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &to 0          &to 0        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
+                   &none     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                 &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &kp CAPS
+                             &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
+                            &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &lt 10 SPACE &kp BSPC &kp DEL   &kp LALT    &kp RET   &lt 10 SPACE   &kp LEFT    &kp UP      &kp DOWN   &kp RIGHT
+            >;
+            display-name = "One Hand";
+
+        one_hand_alt_10 {
+            //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
+            //  -----------|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |-----------
+            // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |           |    LU     |
+            // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
+            //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
+            //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
+            bindings = <
+                               &kp GRAVE   &kp N6      &kp N7     &kp N8      &kp N9      &kp N0       &none          &none        &kp N1      &kp N2     &kp N3      &kp N4      &kp N5    &kp MINUS
+                  &none        &kp TAB     &kp Y       &kp U      &kp I       &kp O       &kp P       &kp RBKT       &kp LBKT      &kp Q       &kp W      &kp E       &kp R       &kp T     &kp EQUAL      &none
+                  &none        &kp ESC     &kp H       &kp J      &kp K        &kp L      &kp SEMI                                 &kp A       &kp S      &kp D       &kp F       &kp G     &kp APOS       &none
+                               &kp LSHFT   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH                                 &kp Z       &kp X      &kp C       &kp V       &kp B     &kp RSHFT
+                               &kp LEFT    &kp UP      &kp DOWN   &kp RIGHT   &none       &kp LALT    &kp RET        &kp BSPC     &kp DEL      &none &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK
+            >;
+            display-name = "One Hand alt";
 
         trans_template {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
