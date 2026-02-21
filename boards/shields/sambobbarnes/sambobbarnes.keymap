@@ -178,6 +178,7 @@
                             &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &lt 10 SPACE &kp BSPC &kp DEL   &kp LALT    &kp RET   &lt 10 SPACE   &kp LEFT    &kp UP      &kp DOWN   &kp RIGHT
             >;
             display-name = "One Hand";
+        };
 
         one_hand_alt_10 {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
@@ -194,6 +195,7 @@
                                &kp LEFT    &kp UP      &kp DOWN   &kp RIGHT   &none       &kp LALT    &kp RET        &kp BSPC     &kp DEL      &none &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK
             >;
             display-name = "One Hand alt";
+        };
 
         trans_template {
             //              -----------------------------------------------------------------------------------    -----------------------------------------------------------------------------------
