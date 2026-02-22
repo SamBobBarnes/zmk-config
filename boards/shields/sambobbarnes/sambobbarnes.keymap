@@ -87,7 +87,7 @@
             //             |____win____|_____+_____|_____-_____|___*/alt___|___\/ctl___|____bsp____|____del____||||____alt____|____ent____|____spc____|____HOME___|_____PU____|_____PD____|____END____|
             bindings = <
                              &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &none          &none        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &mo 8      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                   &mo 8      &kp TAB      &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 9
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &to 3
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                             &kp LCTRL &kp KP_PLUS &kp KP_MINUS   &kp LALT  &kp SPACE     &kp BSPC     &kp DEL        &kp LALT    &kp RET     &kp SPACE   &kp HOME    &kp PG_UP   &kp PG_DN   &kp END
@@ -135,7 +135,7 @@
             // |    LU     |           |           |           |           |           |           |___________||||___________|           |           |           |           |           |    F12    |    LU     |
             // |____LD_____|           |           |           |           |           |           |           ||||           |           |           |           |           |           |           |____LD_____|
             //             |           |           |           |           |           |           |-----------||||-----------|           |           |           |           |           |           |
-            //             |_BT-CYCLE__|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
+            //             |_BT-CYCLE__|___________|___________|___________|_SWAP-WIN__|___________|BT-CLEAR_ALL|||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                                &trans      &kp F1      &kp F2     &kp F3      &kp F4      &kp F4      &none          &none        &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11
                    &none       &trans      &trans      &trans     &trans      &trans      &trans      &trans         &trans       &trans      &trans      &trans      &trans      &trans      &kp F12     &kp K_VOL_UP
@@ -172,7 +172,7 @@
             //             |___________|___________|___________|___________|___________|___________|___________||||___________|___________|___________|___________|___________|___________|___________|
             bindings = <
                              &kp GRAVE     &kp N1      &kp N2     &kp N3      &kp N4      &kp N5      &to 0          &to 0        &kp N6      &kp N7     &kp N8       &kp N9      &kp N0    &kp MINUS
-                   &none     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &none
+                   &none     &kp TAB       &kp Q       &kp W      &kp E       &kp R       &kp T      &kp LBKT        &kp RBKT     &kp Y       &kp U      &kp I        &kp O       &kp P     &kp EQUAL     &to 4
                  &kp CAPS    &kp ESC       &kp A       &kp S      &kp D       &kp F       &kp G                                   &kp H       &kp J      &kp K        &kp L      &kp SEMI   &kp APOS      &kp CAPS
                              &kp LSHFT     &kp Z       &kp X      &kp C       &kp V       &kp B                                   &kp N       &kp M     &kp COMMA    &kp DOT     &kp FSLH   &kp RSHFT
                             &kp LWIN &kp KP_PLUS &kp KP_MINUS &mt LALT KP_ASTERISK &lt 10 SPACE &kp BSPC &kp DEL   &kp LALT    &kp RET   &lt 10 SPACE   &kp LEFT    &kp UP      &kp DOWN   &kp RIGHT
